@@ -133,47 +133,56 @@ The following table summarizes which are the available QOS:
 
    * - **QoS**
      - **MaxWallClockTime**
+     - | **Max running**
+       | **jobs per user**  
      - **Max usable resources**
      - **Priority**
      - **Notes**
    * - **normal**
      - 24 hours
+     -  
      - | 60 cpu-threads, 240 GB of RAM memory
        | 4 GPUs NVIDIA H100 80GB HBM3
      - 60  
      - Default QoS for \*cpus\* and \*gpus\* partitions  
    * - **fast**
      - 2 hours
+     -   
      - | 80 cpu-threads, 320 GB of RAM memory
        | 4 GPUs NVIDIA H100 80GB HBM3
      - 100  
      - 
    * - **long**
      - 3 days
+     - 6  
      - | 40 cpu-threads, 160 GB of RAM memory
        | 2 GPUs NVIDIA H100 80GB HBM3
      - 40  
      - 
    * - **verylong**
      - 7 days
+     - 2  
      - | 20 cpu-threads, 80 GB of RAM memory
        | 2 GPUs NVIDIA H100 80GB HBM3
      - 20  
      - 
    * - **enipiml**
      - 30 days
+     -   
      - | 384 cpu-threads, 1500 GB of RAM memory
        | 4 GPUs NVIDIA H100 80GB HBM3
      - 60  
      - Can be used only for the enipiml partition
    * - **enipred**
      - 30 days
+     -   
      - | 384 cpu-threads, 1500 GB of RAM memory
        | 4 GPUs NVIDIA H100 80GB HBM3
      - 60  
      - Can be used only for the enipred partition
    * - **qst**
      - 30 days
+     -   
      - | 144 cpu-threads, 1500 GB of RAM memory
        | 1 GPU NVIDIA L40S
      - 60  
