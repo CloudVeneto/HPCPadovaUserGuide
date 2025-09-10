@@ -6,8 +6,8 @@ project = 'HPC cluster at INFN Padova'
 copyright = '2021, HPC INFN Padova Support Team'
 author = 'HPC INFN Padova Support Team'
 
-release = '0.19'
-version = '0.19.0'
+release = '0.20'
+version = '0.20.0'
 
 # -- General configuration
 

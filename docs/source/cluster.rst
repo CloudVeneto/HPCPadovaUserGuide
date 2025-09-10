@@ -10,12 +10,15 @@ The resources provided by the INFN Padova HPC cluster are the following:
 
 These nodes are interconnected through a high bandwith, low latency Infiniband network.
 
-The cluster also integrates a server owned by the the "Quantum Matter and
+The cluster also integrates two servers owned by the the "Quantum Matter and
 Information" group:
 
 * a node (cld-dfa-gpu-06) with 2 Intel Xeon Platinum 8452Y processors
-  y(72 cores, 144 threads), 1.5 TB
+  (72 cores, 144 threads), 1.5 TB
   of RAM and 1 NVIDIA L40S GPU.
+* a node (btc-dfa-gpu-02) with 2 Intel Xeon Gold 6534 processors
+  (16 cores, 32 threads), 1.5 TB
+  of RAM and 2 NVIDIA L40S GPU.
 
 Such resources are managed through the SLURM resource manager.
 
@@ -85,7 +88,7 @@ The following table describes the available partitions:
    * - **qst**
      - | users of the
        | QST project
-     - | both gpu (one L40S) and
+     - | both gpus (up to 2 L40S) and
        | only cpus jobs
      - 20
      - 
@@ -184,7 +187,7 @@ The following table summarizes which are the available QOS:
      - 30 days
      -   
      - | 144 cpu-threads, 1500 GB of RAM memory
-       | 1 GPU NVIDIA L40S
+       | 2 GPUs NVIDIA L40S
      - 60  
      - Can be used only for the qst partition
 
