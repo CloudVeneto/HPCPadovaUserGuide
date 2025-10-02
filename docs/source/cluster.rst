@@ -85,6 +85,13 @@ The following table describes the available partitions:
        | GPUS) and only cpus jobs
      - 20
      - 
+   * - **sparch**
+     - | users of the
+       | SPARCH project
+     - | both gpus (up to 4 H100
+       | GPUS) and only cpus jobs
+     - 20
+     - 
    * - **qst**
      - | users of the
        | QST project
@@ -183,6 +190,13 @@ The following table summarizes which are the available QOS:
        | 4 GPUs NVIDIA H100 80GB HBM3
      - 60  
      - Can be used only for the enipred partition
+   * - **sparch**
+     - 30 days
+     -   
+     - | 384 cpu-threads, 1500 GB of RAM memory
+       | 4 GPUs NVIDIA H100 80GB HBM3
+     - 60  
+     - Can be used only for the sparch partition
    * - **qst**
      - 30 days
      -   
