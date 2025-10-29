@@ -139,8 +139,8 @@ Available QoS
 The following table summarizes which are the available QOS:
 
 
-.. list-table:: 
-
+.. list-table::
+   
    * - **QoS**
      - **MaxWallClockTime**
      - | **Max running**
@@ -154,7 +154,7 @@ The following table summarizes which are the available QOS:
      - | 60 cpu-threads, 240 GB of RAM memory
        | 4 GPUs NVIDIA H100 80GB HBM3
      - 60  
-     - Default QoS for \*cpus\* and \*gpus\* partitions  
+     - Default QoS 
    * - **fast**
      - 2 hours
      -   
@@ -176,33 +176,51 @@ The following table summarizes which are the available QOS:
        | 2 GPUs NVIDIA H100 80GB HBM3
      - 20  
      - 
+
+     
+
+Moreover there are some QoS implemented at partition level, i.e. they are
+automatcally enforced for jobs submitted to the relevant partitions:
+
+
+     
+
+.. list-table:: 
+
+   * - **QoS**
+     - **MaxWallClockTime**
+     - | **Max running**
+       | **jobs per user**  
+     - **Max usable resources**
+     - **Priority**
+     - **Notes**
    * - **enipiml**
      - 30 days
      -   
      - | 384 cpu-threads, 1500 GB of RAM memory
        | 4 GPUs NVIDIA H100 80GB HBM3
      - 60  
-     - Can be used only for the enipiml partition
+     - Applied to jobs submitted to the enipiml partition
    * - **enipred**
      - 30 days
      -   
      - | 384 cpu-threads, 1500 GB of RAM memory
        | 4 GPUs NVIDIA H100 80GB HBM3
      - 60  
-     - Can be used only for the enipred partition
+     - Applied to jobs submitted to the enipred partition
    * - **sparch**
      - 30 days
      -   
      - | 384 cpu-threads, 1500 GB of RAM memory
        | 4 GPUs NVIDIA H100 80GB HBM3
      - 60  
-     - Can be used only for the sparch partition
+     - Applied to jobs submitted to the sparch partition
    * - **qst**
      - 30 days
      -   
      - | 144 cpu-threads, 1500 GB of RAM memory
        | 2 GPUs NVIDIA L40S
      - 60  
-     - Can be used only for the qst partition
+     - Applied to jobs submitted to the qst partition
 
 
