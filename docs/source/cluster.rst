@@ -176,6 +176,12 @@ The following table summarizes which are the available QOS:
        | 2 GPUs NVIDIA H100 80GB HBM3
      - 20  
      - 
+   * - **highmem**
+     - 24 hours
+     -  
+     - | 64 cpu-threads, 576 GB of RAM memory
+     - 40  
+     - 
 
      
 
