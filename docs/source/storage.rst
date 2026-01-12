@@ -5,7 +5,7 @@ Three storage areas are available to the users of the cluster:
 
 * The home directory
 
-* A shared scratch directory
+* A shared scratch directory (experimental)
 
 * A job scratch directory  
 
@@ -34,8 +34,8 @@ shared among all nodes of the cluster.
 A quota of 100 GB is assigned to each user on this storage area.
 
 
-Shared scratch directory
-------------------------
+Shared scratch directory (experimental)
+---------------------------------------
 
 
 The second storage area (/shared-scratch/<username>) is a scratch area shared
