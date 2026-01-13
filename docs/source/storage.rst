@@ -50,17 +50,27 @@ area, considering the needs of other users as well.
 
 Job scratch directory
 ---------------------
-The third storage area is a scratch storage area on a local
-storage available only on the node where the job gets executed (i.e. it is
-not shared among all nodes).
-Such scratch storage area,  referred by the TMP_DIR environment variable
-while the job is running, is
+The third storage area is a scratch storage area available
+only on the node where the job is being executed (i.e. it not shared among all nodes),
+and it is available only when the job is running.
+Such scratch area, that can be referred by the TMP_DIR environment variable
+in the running job, is
 **automatically deleted when the job completes its execution**. It is therefore
 up to the job to copy the needed output files to the home directory or to
 another persistent storage.
 
 At least for the time being, there is no quota on this storage area (which is
 shared between all jobs running in that node).
+
+
+.. WARNING ::
+   
+    We want to stress that files in the job scratch directory do not persist after job execution.
+    Users are fully responsible for transferring any results they need before
+    the job terminates.
+
+
+
 
 
 Guidelines
