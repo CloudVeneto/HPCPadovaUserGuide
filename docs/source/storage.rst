@@ -16,6 +16,10 @@ on all
 nodes at /shared/home/enipred. 
 
 
+Users of the Geant4INFN project are also made available in total 10 TB disk space
+available on all nodes considering the /shared/home/geant4-* paths. 
+
+
 
 
 .. NOTE ::

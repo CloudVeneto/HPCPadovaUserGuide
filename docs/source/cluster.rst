@@ -84,7 +84,14 @@ The following table describes the available partitions:
      - | both gpus (up to 4 H100
        | GPUS) and only cpus jobs
      - 20
-     - 
+     -
+   * - **geant4**
+     - | users of the
+       | Geant4INFN project
+     - | both gpus (up to 4 H100
+       | GPUS) and only cpus jobs
+     - 20
+     -
    * - **sparch**
      - | users of the
        | SPARCH project
@@ -214,6 +221,13 @@ automatcally enforced for jobs submitted to the relevant partitions:
        | 4 GPUs NVIDIA H100 80GB HBM3
      - 60  
      - Applied to jobs submitted to the enipred partition
+   * - **geant4**
+     - 30 days
+     -   
+     - | 384 cpu-threads, 1500 GB of RAM memory
+       | 4 GPUs NVIDIA H100 80GB HBM3
+     - 60  
+     - Applied to jobs submitted to the geant4 partition
    * - **sparch**
      - 30 days
      -   
