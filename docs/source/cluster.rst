@@ -71,20 +71,6 @@ The following table describes the available partitions:
        | one or more H100 GPUs
      - 20
      - 
-   * - **enipiml**
-     - | users of the
-       | ENIPIML project
-     - | both gpus (up to 4 H100
-       | GPUS) and only cpus jobs
-     - 20
-     - 
-   * - **enipred**
-     - | users of the
-       | ENIPRED project
-     - | both gpus (up to 4 H100
-       | GPUS) and only cpus jobs
-     - 20
-     -
    * - **geant4**
      - | users of the
        | Geant4INFN project
@@ -92,13 +78,6 @@ The following table describes the available partitions:
        | GPUS) and only cpus jobs
      - 20
      -
-   * - **sparch**
-     - | users of the
-       | SPARCH project
-     - | both gpus (up to 4 H100
-       | GPUS) and only cpus jobs
-     - 20
-     - 
    * - **qst**
      - | users of the
        | QST project
@@ -207,20 +186,6 @@ automatcally enforced for jobs submitted to the relevant partitions:
      - **Max usable resources**
      - **Priority**
      - **Notes**
-   * - **enipiml**
-     - 30 days
-     -   
-     - | 384 cpu-threads, 1500 GB of RAM memory
-       | 4 GPUs NVIDIA H100 80GB HBM3
-     - 60  
-     - Applied to jobs submitted to the enipiml partition
-   * - **enipred**
-     - 30 days
-     -   
-     - | 384 cpu-threads, 1500 GB of RAM memory
-       | 4 GPUs NVIDIA H100 80GB HBM3
-     - 60  
-     - Applied to jobs submitted to the enipred partition
    * - **geant4**
      - 30 days
      -   
@@ -228,13 +193,6 @@ automatcally enforced for jobs submitted to the relevant partitions:
        | 4 GPUs NVIDIA H100 80GB HBM3
      - 60  
      - Applied to jobs submitted to the geant4 partition
-   * - **sparch**
-     - 30 days
-     -   
-     - | 384 cpu-threads, 1500 GB of RAM memory
-       | 4 GPUs NVIDIA H100 80GB HBM3
-     - 60  
-     - Applied to jobs submitted to the sparch partition
    * - **qst**
      - 30 days
      -   
