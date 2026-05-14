@@ -11,6 +11,10 @@ Three storage areas are available to the users of the cluster:
 
 
 
+Users of the ENIPRED project are also made available a 20 TB disk space
+available on all nodes at /shared/home/enipred.
+
+￼
 
 Users of the Geant4INFN project are also made available in total 10 TB disk space
 available on all nodes considering the /shared/home/geant4-* paths. 

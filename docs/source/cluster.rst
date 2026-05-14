@@ -78,6 +78,13 @@ The following table describes the available partitions:
        | GPUS) and only cpus jobs
      - 20
      -
+   * - **enipred**
+     - | users of the
+       | ENIPRED project
+     - | both gpus (up to 4 H100
+       | GPUS) and only cpus jobs
+     - 20
+     -
    * - **qst**
      - | users of the
        | QST project
@@ -186,6 +193,13 @@ automatcally enforced for jobs submitted to the relevant partitions:
      - **Max usable resources**
      - **Priority**
      - **Notes**
+   * - **enipred**
+     - 30 days
+     -   
+     - | 384 cpu-threads, 1500 GB of RAM memory
+       | 4 GPUs NVIDIA H100 80GB HBM3
+     - 60  
+     - Applied to jobs submitted to the enipred partition
    * - **geant4**
      - 30 days
      -   
