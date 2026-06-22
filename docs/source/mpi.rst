@@ -1,16 +1,61 @@
 Running MPI jobs
 ================
 
-In the HPC cluster, you can use the OpenMPI software to run parallel jobs.
+In the HPC cluster, both OpenMPI and NVIDIA HPC-X can be used to run parallel
+jobs.
 
-The OpenMPI is provided through an ennvironment module.
+They are both available as environment software modules (see :ref:`Application software through Environment modules<envswmodules>`).
+
+
+To use openmpi, you need to load the relevant module file, e.g.:
+
+
+::
+
+  $ module avail
+  ---------------------------------------------------- /usr/share/Modules/modulefiles -----------------------------------------------------
+  dot  module-git  module-info  modules  null  use.own  
+
+  -------------------------------------------------------- /shared/sw/modulefiles ---------------------------------------------------------
+  conda-miniforge3-25.3.1  cuda-13.0   openmpi-5.0.5_gcc-12.4.0            openmpi-5.0.10_gcc-12.4.0_cuda-13.0  ucx-1.20.0_cuda-13.0  
+  cuda-12.6                gcc-12.4.0  openmpi-5.0.6_gcc-12.4.0_cuda-12.6  ucx-1.17.0_cuda-12.6                 
+
+  Key:
+  modulepath  
+  
+  $ module load openmpi-5.0.10_gcc-12.4.0_cuda-13.0
+
+
+To use hpc-x:
+
+::
+
+  $ module use $HPCX_LATEST/modulefiles
+  $ module avail
+  --------------------------------- /shared/sw/hpcx-v2.50-gcc-doca_ofed-redhat9-cuda13-x86_64/modulefiles ---------------------------------
+  hpcx  hpcx-debug  hpcx-debug-ompi  hpcx-mt  hpcx-mt-ompi  hpcx-ompi  hpcx-prof  hpcx-prof-ompi  hpcx-stack  
+
+  ---------------------------------------------------- /usr/share/Modules/modulefiles -----------------------------------------------------
+  dot  module-git  module-info  modules  null  use.own  
+
+  -------------------------------------------------------- /shared/sw/modulefiles ---------------------------------------------------------
+  conda-miniforge3-25.3.1  cuda-13.0   openmpi-5.0.5_gcc-12.4.0            openmpi-5.0.10_gcc-12.4.0_cuda-13.0  ucx-1.20.0_cuda-13.0  
+  cuda-12.6                gcc-12.4.0  openmpi-5.0.6_gcc-12.4.0_cuda-12.6  ucx-1.17.0_cuda-12.6                 
+
+  Key:
+  modulepath  
+
+   $ module load hpcx
+
+
+  
 
 Compiling
 ---------
 
 In the following example a simple MPI application is compiled using ``mpicc``
 after having loaded
-the relevant openmpi software module:
+the relevant openmpi software module (in this example openmpi):
 
 
 ::
@@ -70,6 +115,10 @@ This is an example of a SLURM submit file to run a previously compiled applicati
   #SBATCH --ntasks-per-node=3
   #SBATCH --mail-type=ALL
   #SBATCH --mail-user=<email-address>
+  
+  export PMIX_MCA_psec=native
+  export OMPI_MCA_mca_base_component_show_load_errors=0
+
   module load openmpi-5.0.5_gcc-12.4.0
   srun -l --mpi=pmix /shared/home/<username>/hello
 
