@@ -92,6 +92,19 @@ The following table describes the available partitions:
        | only cpus jobs
      - 20
      - 
+   * - **ai-infn**
+     - | for DataCloud 
+       | compute federation PoC
+     - | both gpus (up to 4 H100
+       | GPUS) and only cpus jobs
+     - 20
+     -
+   * - **datacloud-wp6**
+     - | for DataCloud 
+       | compute federation PoC
+     - | only cpus jobs
+     - 20
+     -
    * - **onlycpus-opp**
      - all users
      - | jobs which don't require 
@@ -214,5 +227,19 @@ automatcally enforced for jobs submitted to the relevant partitions:
        | 2 GPUs NVIDIA L40S
      - 60  
      - Applied to jobs submitted to the qst partition
+   * - **ai-infn**
+     - 30 days
+     -   
+     - | 384 cpu-threads, 1500 GB of RAM memory
+       | 4 GPUs NVIDIA H100 80GB HBM3
+     - 60  
+     - Applied to jobs submitted to the ai-infn partition
+
+   * - **datacloud-wp6**
+     - 30 days
+     -   
+     - | 384 cpu-threads, 1500 GB of RAM memory
+     - 60  
+     - Applied to jobs submitted to the datacloud-wp6 partition
 
 
