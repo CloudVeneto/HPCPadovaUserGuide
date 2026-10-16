@@ -31,6 +31,9 @@ jupyter services:
 
 Graphical Desktop
 -----------------
+.. _graphdesk:
+
+
 After login, from the top navbar select **Interactive Apps** and then
 **HPC Padova Desktop**.
 

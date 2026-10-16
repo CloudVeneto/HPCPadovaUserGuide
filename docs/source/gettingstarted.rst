@@ -199,6 +199,16 @@ When you have done, use 'exit' to terminate the interactive job:
    Please remember to close the interactive job with the command `exit` when you have
    finished, in order not to waste resources.
 
+   
+.. NOTE ::
+   
+   For interactive applications, another possibility is run a graphical desktop,
+   as explained in :ref:`Graphical Desktop<graphdesk>`.
+
+
+
+
+   
 
 Manage containerized applications
 ---------------------------------
