@@ -3,9 +3,9 @@ Overview of the INFN Padova HPC Cluster
 
 The resources provided by the INFN Padova HPC cluster are the following:
 
-*  6 CPU only nodes cld-ter-01..06: each node has 2 AMD EPYC 9654 processors
+*  6 CPU only nodes btc-ter-01..06: each node has 2 AMD EPYC 9654 processors
    (192 Cores, 384 threads in total) and 1.5 TB of RAM
-*  5 CPU-GPU nodes cld-ter-gpu-01..05: each node has 2 AMD EPYC 9654 processors
+*  5 CPU-GPU nodes btc-ter-gpu-01..05: each node has 2 AMD EPYC 9654 processors
    (192 Cores, 384 threads in total), 1.5 TB of RAM and 4 NVIDIA H100 80GB HBM3 GPUs
 
 These nodes are interconnected through a high bandwith, low latency Infiniband network.
@@ -13,7 +13,7 @@ These nodes are interconnected through a high bandwith, low latency Infiniband n
 The cluster also integrates two servers owned by the the "Quantum Matter and
 Information" group:
 
-* a node (cld-dfa-gpu-06) with 2 Intel Xeon Platinum 8452Y processors
+* a node (btc-dfa-gpu-06) with 2 Intel Xeon Platinum 8452Y processors
   (72 cores, 144 threads), 1.5 TB
   of RAM and 1 NVIDIA L40S GPU.
 * a node (btc-dfa-gpu-02) with 2 Intel Xeon Gold 6534 processors
