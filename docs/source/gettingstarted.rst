@@ -1,10 +1,59 @@
 Getting started
 ================
 
+.. _prerequisites:
+
+Prerequisites for using INFN resources 
+--------------------------------------
+
+There are some specific requirements to use HPC Cluster at INFN Padova. Users who need to use INFN IT resources must:
+
+* have a verified digital identity (LoA2) on INFN-AAI;
+* declare to have read and accepted the INFN rules for the use of IT resources;
+* have followed the “Corso di Sicurezza Informatica - BASE”.
+
+To have a verified digital identity, connect to https://signup.app.infn.it/ to self-register and to get an account on INFN-AAI. Documentation (unfortunately only in Italian) on this process is available here.
+
+After this self-registration process, connect to the INFN-AAI User Portal at https://userportal.app.infn.it/ using your INFN-AAI account to complete the digital identity registration. 
+
+In this process you will have to choose where (the INFN site) you want to be identified, and the person that will have to approve your request (if you are a Unipd student and you can’t find your Professor among the proposed list of persons, please select ‘Giannina Borgato’).
+
+Documentation (unfortunately only in Italian) on this process is available `here <https://wiki.infn.it/cn/ccr/aai/doc/rid/istruzioni>`_ .
+
+You will then be contacted by an INFN secretariat person for your identification.
+
+To follow the “Corso di Sicurezza Informatica - BASE”, please use `this link <https://elearning.infn.it/course/view.php?id=105>`_ 
+
+This course must be followed within 30 days after the registration in INFN-AAI.
+
+
+When your AAI account will be approved, you need to submit a formal request for local account at INFN Padova.
+
+You can find the procedure "Access to local IT services with the AAI account" at the following link (You can select the language from the menu in the top right corner): 
+
+https://calcolo.pd.infn.it/
+
+After AAI login, you can "Ask for a local account"
+
+
+.. note::
+
+   Please note the local account can be requested by people who fall into these categories:
+
+   * INFN Employee / Contractor Padua Section
+   * Employee / Contractor Department of Physics and Astronomy UniPD
+   * Guest / External Collaborator / Visitor / Employee other INFN office
+   * PhD student in Physics and Astronomy
+   * Associate INFN Padova
+   * Research fellow / Scholarship holder
+   * Undergraduate
+   * Intern
+
+
 Apply for an account
 --------------------
 
-Please contact support-hpc AT pd.infn.it for an account on the HPC cluster.
+Once the prerequisites :ref:`prerequisites`  have been met, please contact support-hpc AT pd.infn.it for an account on the HPC cluster.
 In the request please specify:
 
 * your institution
@@ -15,7 +64,7 @@ In the request please specify:
 
 
 Login to the user inteface
--------------------------
+--------------------------
 cld-ter-ui-01.pd.infn.it is the node configured as user interface. Use ssh to connect to
 this cluster with the credentials that you have been given:
 
