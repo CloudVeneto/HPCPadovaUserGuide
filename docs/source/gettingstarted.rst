@@ -1,6 +1,23 @@
 Getting started
 ================
 
+Who can use the INFN Padova HPC cluster
+---------------------------------------
+
+The INFN Padova HPC cluster was funded primarily by the Terabit PNRR project.
+
+It is available to experiments and projects that have been allocated resources
+following a review by the relevant bodies
+(ultimately, INFN DataCloud WP3 determines where the various experiments can use their pledged resources).
+
+Resources that have not yet been allocated, as well as pledged resources that are temporarily
+unused, are available to local (Padova) users for **INFN-related scientific activities**.
+
+
+
+
+
+
 .. _prerequisites:
 
 Prerequisites for using INFN resources 
@@ -10,7 +27,12 @@ There are some specific requirements to use HPC Cluster at INFN Padova. Users wh
 
 * have a verified digital identity (LoA2) on INFN-AAI;
 * declare to have read and accepted the INFN rules for the use of IT resources;
-* have followed the “Corso di Sicurezza Informatica - BASE”.
+* have followed the “Corso di Sicurezza Informatica - BASE”;
+
+
+Local (Padova) users must also have a local account at INFN Padova.
+
+
 
 To have a verified digital identity, connect to https://signup.app.infn.it/ to self-register and to get an account on INFN-AAI. Documentation (unfortunately only in Italian) on this process is available here.
 
